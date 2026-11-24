@@ -1,0 +1,16 @@
+{
+  "name": "meridiano-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0",
+    "graphql-http": "^1.22.4"
+  }
+}

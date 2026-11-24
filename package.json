@@ -1,0 +1,15 @@
+{
+  "name": "agencia-viajes",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Meridiano, agencia de viajes con frontend React y backend mock REST + GraphQL.",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently --kill-others-on-fail -n api,web -c blue,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:api": "npm run dev --prefix server",
+    "dev:web": "npm run dev --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
